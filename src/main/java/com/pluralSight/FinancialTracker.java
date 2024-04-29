@@ -2,7 +2,9 @@ package com.pluralSight;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -151,6 +153,47 @@ public class FinancialTracker {
         // The amount should be a positive number.
         // After validating the input, a new `Deposit` object should be created with the entered values.
         // The new deposit should be added to the `transactions` ArrayList.
+
+
+        System.out.println("Enter the date and time (yyyy-MM-dd HH:mm:ss):");
+        String dateAndTimeInput = scanner.nextLine().trim();
+
+        // Validate date and time format
+        LocalDateTime dateTime = null;
+        try {
+
+            dateTime = LocalDateTime.parse(dateAndTimeInput, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+
+        } catch (DateTimeParseException e) {
+
+            System.out.println("Invalid date and time format. Please use yyyy-MM-dd HH:mm:ss.");
+            return;
+        }
+
+        System.out.println("Enter the vendor:");
+        String vendor = scanner.nextLine().trim();
+
+        System.out.println("Enter the amount:");
+        double amount = 0;
+        try {
+            amount = Double.parseDouble(scanner.nextLine().trim());
+            if (amount <= 0) {
+                System.out.println("Amount must be a positive number.");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid amount format. Please enter a valid number.");
+            return;
+        }
+
+        // Create new Deposit object
+        Deposit deposit = new Deposit(dateTime, vendor, amount);
+
+        // Add deposit to transactions ArrayList
+        transactions.add(deposit);
+
+        System.out.println("Deposit added successfully!");
+
     }
 
     private static void addPayment(Scanner scanner) {

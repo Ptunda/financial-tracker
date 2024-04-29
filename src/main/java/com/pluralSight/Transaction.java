@@ -1,5 +1,7 @@
 package com.pluralSight;
 
+import java.time.LocalDateTime;
+
 public class Transaction {
 
     // attributes
@@ -16,6 +18,18 @@ public class Transaction {
         this.description = description;
         this.vendor = vendor;
         this.amount = amount;
+    }
+
+    // second constructor to provide attributes for the Deposit class
+    public Transaction(LocalDateTime dateTime, String vendor) {
+
+        this.date = dateTime.toLocalDate().toString();
+        this.time = dateTime.toLocalTime().toString();
+        this.vendor = vendor;
+        this.description = ""; // Setting description to an empty string as default
+        this.amount = 0.0; // Setting amount to 0.0 as default
+
+
     }
 
     // getters for the private attributes
