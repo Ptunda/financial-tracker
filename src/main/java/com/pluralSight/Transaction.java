@@ -30,7 +30,7 @@ public class Transaction {
         this.date = dateTime.toLocalDate();
         this.time = dateTime.toLocalTime();
         this.vendor = vendor;
-        this.description = description; // specifying the description parameter will assign the provided argument value
+        this.description = description;
         this.amount = 0.0; // Setting amount to 0.0 as default
 
     }
