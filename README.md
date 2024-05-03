@@ -38,8 +38,8 @@ Follow these steps to run the application within IntelliJ IDEA:
 - INTELLIJ IDEA, Community 24.1
  
 ## Demo
-
-<img src="video1686813575.gif" width="1400px">
+<br>
+<img src="video1686813575.gif" width="1400px" height="500px">
 
 ## Future Work
 
