@@ -4,7 +4,8 @@
 
 The Financial Tracker is a Java console application designed to help individuals manage their financial transactions effectively. It allows users to input and track their deposits, payments, and other financial activities. The application aims to provide users with insights into their spending habits, enable better financial decision-making, and facilitate the organization of personal finances.
 
-!C:\Users\PAUL TUNDA\Pictures\Screenshots\Screenshot 2024-05-02 200458.png
+<br>
+<img src="Screenshot 2024-05-02 200458.png">
 
 ## User Stories
 
@@ -17,7 +18,7 @@ The Financial Tracker is a Java console application designed to help individuals
 
 ### Prerequisites
 
-- IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
+- IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from <a href="https://www.jetbrains.com/idea/download/" hreflang="en">here</a>.
 - Java JDK: Make sure Java SDK is installed and configured in IntelliJ.
 
 
@@ -50,8 +51,8 @@ In future iterations, the following enhancements or functionalities could be con
 
 ## Resources
 
-- W3Schools(https://www.w3schools.com/java/)
-- Think Java(https://www.amazon.com/Think-Java-Like-Computer-Scientist/dp/1492072508/ref=asc_df_1492072508?tag=bingshoppinga-20&linkCode=df0&hvadid=79920843350879&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583520391512125&psc=1)
+- <a href="https://www.w3schools.com/java/">W3Schools</a>
+- <a href="https://www.amazon.com/Think-Java-Like-Computer-Scientist/dp/1492072508/ref=asc_df_1492072508?tag=bingshoppinga-20&linkCode=df0&hvadid=79920843350879&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583520391512125&psc=1">Think Java</a>
 
 
 ## Thanks
