@@ -39,7 +39,7 @@ Follow these steps to run the application within IntelliJ IDEA:
  
 ## Demo
 
-![Application Screenshot](C:\Users\PAUL TUNDA\Documents\Zoom\video1686813575.gif)
+<img src="video1686813575.gif" width="1400px">
 
 ## Future Work
 
